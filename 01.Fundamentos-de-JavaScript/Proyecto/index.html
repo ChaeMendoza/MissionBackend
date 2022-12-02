@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Amarre</title>
+    <link rel="shortcut icon" href="src/img/corazon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <!-- Script antes del body -->
+    <!-- Con script asociamos el archivo JavaScript al archivo HTML. 
+        Al ponerlo en el HEAD, este carga antes del body. 
+        Al ponerlo después, este carga después de lo que se ve en la página. 
+        Es importante determinar que comportamiento queremos.
+    -->
+    <script src="src/js/antesDeBody.js"></script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <section class="modo-hot">
+        <h1>Modo Romántico Activado</h1>
+        <img class="img" src="src/img/pareja.png" alt="Img not found">
+    </section>
+    <!-- Contenido -->
+    <section class="center">
+        <video width="600" height="350" controls>
+            <source src="src/video/video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <!-- Pregunta -->
+    <section class="center">
+        <div>
+            <h1>Quieres casarte conmigo?</h1>
+            <div class="center">
+                <button class="btn" id="btn_si">Sí 😊</button>
+                <button class="btn" id="btn_no">No 😭</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script al final del body -->
+    <script src="src/js/main.js"></script>
+</body>
+</html>
