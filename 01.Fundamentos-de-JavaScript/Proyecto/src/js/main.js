@@ -11,8 +11,16 @@ let divModoSexo = document.getElementsByClassName("modo-hot")[0];
 btnNo.addEventListener('mouseenter', function(e) { moverPosicionRandom(e.target) });
 
 btnSi.addEventListener('click', function(e) {
-    alert('Sabía que dirías que SÍ. Casemonos ya y tengamos hijos. TE AMO!!!! ❤️');
-    
+     
+    Swal.fire({
+        title: 'Sabía que dirías que sí!',
+        text: 'Ya casémonos y tengamos hijos. Te amo!!!❤️',
+        imageUrl: 'https://png.pngtree.com/png-clipart/20201205/ourlarge/pngtree-love-cartoon-couple-avatar-png-image_2511117.jpg',
+        imageWidth: 300,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+
     const cancion = new Audio('../audio/audio.mp3');
     cancion.play();
 });
